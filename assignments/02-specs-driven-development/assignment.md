@@ -32,6 +32,8 @@ cd spec-kit-week2
 Launch your agent **inside the project directory**. The `/speckit-*` skills run in the
 agent's **chat**, not the terminal.
 
+> **Tip:** Run `specify init --help` to see all supported integration keys (e.g., `copilot`, `cursor`, `claude`). If you are using Antigravity, choose `copilot` or `cursor` to generate the compatible slash commands and rule templates.
+
 ## The feature (pre-scoped — build exactly this)
 > A **quote-of-the-day** page: shows one random quote from a small built-in list, with a
 > "New quote" button, and a way to mark a quote as a favorite that persists on reload.
@@ -48,6 +50,8 @@ Invoke each skill in your agent's chat, **reviewing each artifact before continu
 ```
 Repeat **implement → converge** until it reports **Converged**. At least once, when an
 artifact is vague or wrong, **refine the spec/plan** (not the code) and note what changed.
+
+> **Common Mistake:** Avoid manually editing generated code when an output is incorrect or incomplete. In Spec-Driven Development, code is an implementation artifact derived from your specification: update the upstream spec (`.specify/spec.md`) or plan (`.specify/plan.md`) and run `/speckit-implement` again so the spec stays the single source of truth.
 
 ## Deliverables
 **Submit the GitHub repository link** for `spec-kit-week2/` (add the instructor as a
